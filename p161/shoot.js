@@ -10,7 +10,7 @@ AFRAME.registerComponent("bowling-balls",{
                     primitive:"sphere",
                     radius:0.1,
                 });
-                bullet.setAttribute("material","color","black");
+                bullet.setAttribute("gltf-model",".models/bowling_ball/scene.gltf");
                 var cam = document.querySelector("#camera");
                 pos=cam.getAttribute("position");
                 bullet.setAttribute("position",{
